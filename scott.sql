@@ -4,7 +4,7 @@
 -- =====================================
 -- PDB에 접속해서 실행하세요 (예: sqlplus sys/oracle@localhost:1521/XEPDB1 as sysdba)
 -- 0.유저가 있으면 삭제
--- DROP USER scott CASCADE;
+DROP USER scott CASCADE;
 -- 1. 유저 생성
 CREATE USER scott IDENTIFIED BY tiger;
 
