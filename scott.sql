@@ -32,7 +32,9 @@ CREATE TABLE scott.emp (
                            hiredate DATE,
                            sal      NUMBER(7,2),
                            comm     NUMBER(7,2),
-                           deptno   NUMBER(2) CONSTRAINT fk_deptno REFERENCES scott.dept(deptno)
+                           deptno   NUMBER(2)
+                            CONSTRAINT fk_deptno
+                            REFERENCES scott.dept(deptno)
 );
 
 -- 급여 등급 테이블
