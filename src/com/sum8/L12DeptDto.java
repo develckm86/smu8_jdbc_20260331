@@ -1,5 +1,6 @@
 package com.sum8;
-
+//Java Beans > DTO
+//POJO (Plain Old Java Object)
 public class L12DeptDto {
 //    dto : 데이터를 저장(캡슐화,Beans)하고 전송하는 객체
 //DEPTNO Number(2) Pk(not null)
@@ -37,5 +38,13 @@ public class L12DeptDto {
     }
     public void setLoc(String loc) {
         this.loc = loc;
+    }
+    @Override
+    public String toString() {
+        return "{" +
+                "deptno=" + deptno +
+                ", dname='" + dname + '\'' +
+                ", loc='" + loc + '\'' +
+                "}\n";
     }
 }
