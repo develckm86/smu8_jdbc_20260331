@@ -39,6 +39,7 @@ public class L12DeptDto {
     public void setLoc(String loc) {
         this.loc = loc;
     }
+
     @Override
     public String toString() {
         return "{" +

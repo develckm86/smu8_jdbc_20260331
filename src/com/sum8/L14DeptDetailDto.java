@@ -9,7 +9,7 @@ public class L14DeptDetailDto {
         L12DeptDto dept=null; //조회한 내역이 없을 수 있기 때문에 Null
         try (Connection conn= DriverManager.getConnection(Scott.URL,Scott.USERNAME,Scott.PASSWORD);
              PreparedStatement ps=conn.prepareStatement(sql);){
-            int deptno=60;
+            int deptno=40;
             ps.setInt(1,deptno);
             try (ResultSet rs=ps.executeQuery()){
                 if (rs.next()){ //무조건 단건의 조회결과가 나오기 때문에 while 대신 if
