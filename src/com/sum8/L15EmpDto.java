@@ -17,6 +17,7 @@ public class L15EmpDto {
     private Double sal;
     private Double comm;
     private Integer deptno;
+
     @Override
     public String toString() {
         return "{" +
