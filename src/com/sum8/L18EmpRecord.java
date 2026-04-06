@@ -11,5 +11,4 @@ public record L18EmpRecord(
         Double sal,
         Double comm,
         Integer deptno
-) {
-}
+) { }

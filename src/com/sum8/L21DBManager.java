@@ -9,11 +9,14 @@ public class L21DBManager {
     //1.객체를 외부에서 생성하지 못하게 막기 private 생성자
     //2.내부에서 객체를 만들어서 반환 (캡슐화)
     //3.참조할 함수를 static 이 아니게 생성
+    
     private L21DBManager(){}
     private static L21DBManager INSTANCE=new L21DBManager();
     public static L21DBManager getInstance(){
         return INSTANCE;
     }//내부에서 생성한 객체를 재사용하는 구조 (외부에서는 절대 객체를 생성할 수 없음)
+
+
     private Connection conn;
     public Connection getConnection() throws SQLException {
         String url="jdbc:oracle:thin:@//localhost:1521/XEPDB1";

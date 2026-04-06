@@ -27,7 +27,7 @@ public class L19EmpDetailRecord {
                             rs.getObject("deptno", Integer.class)
                     );
                 }
-                System.out.println(emp);
+                System.out.println(emp.toString());
                 System.out.println(emp.ename());
                 System.out.println(emp.job());
                 System.out.println(emp.hiredate());

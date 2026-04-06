@@ -51,17 +51,14 @@ public class L20StaticDBManager {
             if(update>0){
                 System.out.println("포드님 커미션 8888 성공");
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        } catch (SQLException e) {throw new RuntimeException(e);}
+
         //////다른 곳에서 다시 conn 호출 후 사용
         try(Connection conn=L20StaticDBManager.conn; //close 상태기 때문에 다시 사용 불가
             Statement st=conn.createStatement() //오류  ORA-17008: 접속을 해제했습니다.
         ){
 
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        } catch (SQLException e) {throw new RuntimeException(e);}
 
     }
 }
