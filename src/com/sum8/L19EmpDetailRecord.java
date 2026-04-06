@@ -24,7 +24,8 @@ public class L19EmpDetailRecord {
                             rs.getObject("hiredate", LocalDate.class),
                             rs.getObject("sal", Double.class),
                             rs.getObject("comm", Double.class),
-                            rs.getObject("deptno", Integer.class)
+                            rs.getObject("deptno", Integer.class),
+                            null
                     );
                 }
                 System.out.println(emp.toString());

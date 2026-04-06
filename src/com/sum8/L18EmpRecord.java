@@ -10,5 +10,21 @@ public record L18EmpRecord(
         LocalDate hiredate,
         Double sal,
         Double comm,
-        Integer deptno
-) { }
+        Integer deptno,
+        L17DeptRecord dept // n:1 일때 사원이 부서를 포함함
+) {
+    @Override
+    public String toString() {
+        return "{" +
+                "empno=" + empno +
+                ", ename='" + ename + '\'' +
+                ", job='" + job + '\'' +
+                ", mgr=" + mgr +
+                ", hiredate=" + hiredate +
+                ", sal=" + sal +
+                ", comm=" + comm +
+                ", deptno=" + deptno +
+                ", dept=" + dept +
+                "}\n";
+    }
+}
